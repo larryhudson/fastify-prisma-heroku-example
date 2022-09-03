@@ -1,0 +1,21 @@
+{
+  "name": "prisma-heroku",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "prisma generate",
+    "dev": "PORT=3000 node src/index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.3.1",
+    "fastify": "^4.5.3",
+    "fastify-cli": "^5.4.0",
+    "fastify-plugin": "^4.2.1"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,31 @@
+@HOST = http://localhost:3000
+
+###
+# Get All Animals
+GET {{HOST}}/animals
+
+###
+# Get Animal By ID
+GET {{HOST}}/animals/1
+
+###
+# Create Animal
+POST {{HOST}}/animals
+Content-Type: application/json
+
+{
+    "animal": "lion"
+}
+
+###
+# Update Animal
+PUT {{HOST}}/animals/7
+Content-Type: application/json
+
+{
+    "animal": "hamster"
+}
+
+###
+# Delete Animal
+DELETE {{HOST}}/animals/7
